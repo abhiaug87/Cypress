@@ -5,6 +5,7 @@
  import { SendMessage } from './sendmessage';
  import { LogoutPage } from './logout';
  import { SearchFriends } from './searchfriends';
+ import { Notifications} from './notifications';
 
  export class FaceBook 
  {
@@ -16,6 +17,7 @@
  selectContact = new SelectContact();
  logoutPage = new LogoutPage();
  searchFriends = new SearchFriends();
+ notifications =  new Notifications
  }
 
  const facebook = new FaceBook();
@@ -56,3 +58,12 @@ describe ('When I want to search a friend', () => {
 });
 });
 
+describe ('When I want to view my profile', () => {
+  it ('I am able to view notifications', () => {
+    expect (facebook.loginPage.enterLoginCredentials());
+    expect (facebook.loginPage.submitCredentials());
+    expect (facebook.landingPage.verifyLandingPage());
+    expect (facebook.notifications.notifications());
+    expect (facebook.logoutPage.logout());
+});
+});
