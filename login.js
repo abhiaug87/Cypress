@@ -17,17 +17,17 @@
      }
      else if(cy.contains('Email address or phone number')) 
      {
-     expect(cy.contains('Email address or phone number'),"Text is missing");
-     expect(cy.contains('Email address or phone number').click({ force:true }).type('kulkarniabhishek23887@gmail.com'));
-     expect(cy.contains('Password'),"Text is missing");
-     expect(cy.contains('Password').click({ force:true }).type('Auckland2019'));
+     expect(cy.get('text').contains('Email address or phone number'),"Text is missing");
+     expect(cy.get('text').contains('Email address or phone number').click({ force:true }).type('kulkarniabhishek23887@gmail.com'));
+     expect(cy.get('text').contains('Password'),"Text is missing");
+     expect(cy.get('text').contains('Password').click({ force:true }).type('Auckland2019'));
   
     }
  }
 
    submitCredentials = function () {
     expect(cy.contains('Log In'),"Text is missing");
-    expect(cy.contains('Password').click().type('Auckland2019'));
+    expect(cy.contains('Password').click().type('blahblah'));
     expect(cy.contains('Log In').click());
    }
 }
