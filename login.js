@@ -5,7 +5,7 @@
       {
      expect(cy.contains('Email or Phone'),"Text is missing");
      expect(cy.contains('Password'),"Text is missing");
-     expect(cy.contains('Email or Phone').click().type('kulkarniabhishek23887@gmail.com'));
+     expect(cy.contains('Email or Phone').click().type('abc1234567@gmail.com'));
      
      }
       else if(cy.contains('Abhishek'))
@@ -18,7 +18,7 @@
      else if(cy.contains('Email address or phone number')) 
      {
      expect(cy.get('text').contains('Email address or phone number'),"Text is missing");
-     expect(cy.get('text').contains('Email address or phone number').click({ force:true }).type('kulkarniabhishek23887@gmail.com'));
+     expect(cy.get('text').contains('Email address or phone number').click({ force:true }).type('abc1234567@gmail.com'));
      expect(cy.get('text').contains('Password'),"Text is missing");
      expect(cy.get('text').contains('Password').click({ force:true }).type('blahblah'));
   
