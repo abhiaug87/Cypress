@@ -20,7 +20,7 @@
      expect(cy.get('text').contains('Email address or phone number'),"Text is missing");
      expect(cy.get('text').contains('Email address or phone number').click({ force:true }).type('kulkarniabhishek23887@gmail.com'));
      expect(cy.get('text').contains('Password'),"Text is missing");
-     expect(cy.get('text').contains('Password').click({ force:true }).type('Auckland2019'));
+     expect(cy.get('text').contains('Password').click({ force:true }).type('blahblah'));
   
     }
  }
