@@ -1,7 +1,7 @@
 export class SelectContact{
     selectingcontact = function () {
-       expect(cy.contains('Akshay Sud'),"Text is missing");
-       cy.contains('Akshay Sud').click({force:true});
+       cy.contains('Atinder Bal').click({position: 'bottomLeft', force: true});
+       setInterval(9000);
        expect( cy.get('div._1mf._1mj'),"Element is missing");
        cy.get('div._1mf._1mj').click().type('This is a test').type('{enter}');  
        setInterval(9000);
