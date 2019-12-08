@@ -38,8 +38,8 @@
     expect (facebook.loginPage.enterLoginCredentials());
     expect (facebook.loginPage.submitCredentials());
     expect (facebook.landingPage.verifyLandingPage());
-    expect (facebook.selectContact.selectingcontact());
-    expect (facebook.sendMessage.sendingMessage());
+    expect (facebook.selectContact.sendMessage());
+    expect (facebook.sendMessage.selectContact());
    expect  (facebook.logoutPage.logout());
 });
 });
