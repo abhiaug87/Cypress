@@ -5,8 +5,6 @@ export class SendMessage{
       setInterval(9000);
       expect(cy.contains('See all in Messenger' ),"Text is missing");
       cy.contains('See all in Messenger').click();
-      expect(cy.contains('Akshay Sud' ),"Text is missing");
-      expect(cy.contains('Atinder Bal' ),"Text is missing");
       setInterval(9000);
     }
 }
