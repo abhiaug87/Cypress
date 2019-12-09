@@ -38,61 +38,61 @@
     expect (facebook.loginPage.enterLoginCredentials());
     expect (facebook.loginPage.submitCredentials());
     expect (facebook.landingPage.verifyLandingPage());
-    expect (facebook.selectContact.sendMessage());
-    expect (facebook.sendMessage.selectContact());
+    expect (facebook.sendMessage.sendingMessage());
+    expect (facebook.selectContact.selectingcontact());
    expect  (facebook.logoutPage.logout());
 });
 });
 
 
-// describe ('When I want to view my profile', () => {
-//   it ('I am able to check profile details', () => {
-//     expect (facebook.loginPage.enterLoginCredentials());
-//     expect (facebook.loginPage.submitCredentials());
-//     expect (facebook.landingPage.verifyLandingPage());
-//     expect (facebook.viewProfile.viewprofile());
-//     expect (facebook.logoutPage.logout());
-// });
-// });
+describe ('When I want to view my profile', () => {
+  it ('I am able to check profile details', () => {
+    expect (facebook.loginPage.enterLoginCredentials());
+    expect (facebook.loginPage.submitCredentials());
+    expect (facebook.landingPage.verifyLandingPage());
+    expect (facebook.viewProfile.viewprofile());
+    expect (facebook.logoutPage.logout());
+});
+});
 
-// describe ('When I want to search a friend', () => {
-//   it ('I am able to search a friend', () => {
-//     expect (facebook.loginPage.enterLoginCredentials());
-//     expect (facebook.loginPage.submitCredentials());
-//     expect (facebook.landingPage.verifyLandingPage());
-//     expect (facebook.searchFriends.searchfriends());
-//     expect (facebook.logoutPage.logout());
-// });
-// });
+describe ('When I want to search a friend', () => {
+  it ('I am able to search a friend', () => {
+    expect (facebook.loginPage.enterLoginCredentials());
+    expect (facebook.loginPage.submitCredentials());
+    expect (facebook.landingPage.verifyLandingPage());
+    expect (facebook.searchFriends.searchfriends());
+    expect (facebook.logoutPage.logout());
+});
+});
 
-// describe ('When I want to view notifications', () => {
-//   it ('I am able to view a page', () => {
-//     expect (facebook.loginPage.enterLoginCredentials());
-//     expect (facebook.loginPage.submitCredentials());
-//     expect (facebook.landingPage.verifyLandingPage());
-//     expect (facebook.notifications.clicknotifications());
-//     expect (facebook.logoutPage.logout());
-// });
-// });
+describe ('When I want to view notifications', () => {
+  it ('I am able to view a page', () => {
+    expect (facebook.loginPage.enterLoginCredentials());
+    expect (facebook.loginPage.submitCredentials());
+    expect (facebook.landingPage.verifyLandingPage());
+    expect (facebook.notifications.clicknotifications());
+    expect (facebook.logoutPage.logout());
+});
+});
 
-// describe ('When I want to dislike a page', () => {
-//   it ('I am able to dislike a page', () => {
-//     expect (facebook.loginPage.enterLoginCredentials());
-//     expect (facebook.loginPage.submitCredentials());
-//     expect (facebook.landingPage.verifyLandingPage());
-//     expect (facebook.mypage.clickmypage());
-//     expect (facebook.like.clicklike());
-//     expect (facebook.logoutPage.logout());
-// });
-// });
+describe ('When I want to dislike a page', () => {
+  it ('I am able to dislike a page', () => {
+    expect (facebook.loginPage.enterLoginCredentials());
+    expect (facebook.loginPage.submitCredentials());
+    expect (facebook.landingPage.verifyLandingPage());
+    expect (facebook.mypage.clickmypage());
+    expect (facebook.like.clicklike());
+    expect (facebook.logoutPage.logout());
+});
+});
 
-// describe ('When I want to dislike a page', () => {
-//   it ('I am able to dislike a page', () => {
-//     expect (facebook.loginPage.enterLoginCredentials());
-//     expect (facebook.loginPage.submitCredentials());
-//     expect (facebook.landingPage.verifyLandingPage());
-//     expect (facebook.mypage.clickmypage());
-//     expect (facebook.unlike.clickunlike());
-//     expect (facebook.logoutPage.logout());
-// });
-// });
+describe ('When I want to dislike a page', () => {
+  it ('I am able to dislike a page', () => {
+    expect (facebook.loginPage.enterLoginCredentials());
+    expect (facebook.loginPage.submitCredentials());
+    expect (facebook.landingPage.verifyLandingPage());
+    expect (facebook.mypage.clickmypage());
+    expect (facebook.unlike.clickunlike());
+    expect (facebook.logoutPage.logout());
+});
+});
